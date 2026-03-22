@@ -1,115 +1,177 @@
 <!DOCTYPE html>
-<html lang="pt-PT">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Batalha Naval</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <meta
+    name="description"
+    content="A clean Hello World landing page ready for GitHub Pages."
+  />
+  <title>Hello World</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="app-shell">
-    <header class="hero">
-      <div>
-        <p class="eyebrow">Jogo Web</p>
-        <h1>Batalha Naval</h1>
-        <p class="hero-copy">Escolhe o modo, prepara a frota e joga até afundar todos os navios adversários.</p>
-      </div>
-      <button id="new-game-btn" class="ghost-button">Novo jogo</button>
-    </header>
+  <div class="background-glow glow-1"></div>
+  <div class="background-glow glow-2"></div>
 
-    <main class="layout">
-      <section class="panel controls-panel">
-        <h2>Configuração</h2>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand">hello-world</a>
 
-        <div class="control-group">
-          <span class="group-label">Modo</span>
-          <div class="segmented-control" id="mode-selector">
-            <button class="segment active" data-mode="computer">vs Computador</button>
-            <button class="segment" data-mode="player">vs Jogador</button>
-          </div>
-        </div>
-
-        <div class="control-group" id="difficulty-group">
-          <span class="group-label">Dificuldade</span>
-          <div class="segmented-control" id="difficulty-selector">
-            <button class="segment active" data-difficulty="easy">Fácil</button>
-            <button class="segment" data-difficulty="medium">Média</button>
-            <button class="segment" data-difficulty="hard">Alta</button>
-          </div>
-        </div>
-
-        <div class="control-group">
-          <span class="group-label">Frota</span>
-          <p class="muted">Navios: 4, 3, 3, 2, 2. A distribuição é automática, mas pode ser refeita.</p>
-          <div class="setup-actions">
-            <button id="randomize-current-btn" class="secondary-button">Reorganizar frota atual</button>
-            <button id="start-btn" class="primary-button">Começar partida</button>
-          </div>
-        </div>
-
-        <div class="status-card">
-          <span class="status-label">Estado</span>
-          <h3 id="status-title">Configura a partida</h3>
-          <p id="status-text">Seleciona o modo de jogo e reorganiza as frotas antes de começar.</p>
-        </div>
-
-        <div class="fleet-list">
-          <div>
-            <span class="fleet-label">Jogador 1</span>
-            <ul id="player1-fleet"></ul>
-          </div>
-          <div>
-            <span class="fleet-label" id="opponent-fleet-label">Computador</span>
-            <ul id="player2-fleet"></ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="panel game-panel">
-        <div class="boards-header">
-          <div>
-            <h2 id="turn-indicator">Fase de preparação</h2>
-            <p id="turn-subtitle">Os tabuleiros estão prontos para ser reorganizados.</p>
-          </div>
-          <div class="legend">
-            <span><i class="legend-cell ship"></i> Navio</span>
-            <span><i class="legend-cell hit"></i> Acerto</span>
-            <span><i class="legend-cell miss"></i> Água</span>
-          </div>
-        </div>
-
-        <div class="boards">
-          <article class="board-card">
-            <div class="board-card-header">
-              <h3 id="player1-board-title">Tabuleiro do Jogador 1</h3>
-              <span class="board-note" id="player1-board-note">A tua frota</span>
-            </div>
-            <div id="player1-board" class="board"></div>
-          </article>
-
-          <article class="board-card">
-            <div class="board-card-header">
-              <h3 id="opponent-board-title">Tabuleiro do Computador</h3>
-              <span class="board-note" id="opponent-board-note">Ataca aqui</span>
-            </div>
-            <div id="player2-board" class="board"></div>
-          </article>
-        </div>
-      </section>
-    </main>
-  </div>
-
-  <div id="round-modal" class="modal hidden" aria-hidden="true">
-    <div class="modal-card">
-      <p class="eyebrow">Confirmação de round</p>
-      <h2 id="modal-title">Próximo turno</h2>
-      <p id="modal-text">Entrega o dispositivo ao próximo jogador.</p>
-      <button id="modal-confirm-btn" class="primary-button">Começar round</button>
+      <nav class="nav">
+        <a href="#features">Features</a>
+        <a href="#start">Get Started</a>
+        <a
+          href="https://github.com/fatings/hello-world"
+          target="_blank"
+          rel="noreferrer"
+          class="nav-button"
+        >
+          GitHub
+        </a>
+      </nav>
     </div>
-  </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Simple static landing page</p>
+
+          <h1>
+            Hello, World.
+            <span class="gradient-text">Ship something fast.</span>
+          </h1>
+
+          <p class="hero-text">
+            A lightweight landing page you can publish instantly with GitHub
+            Pages. No frameworks, no build step, no complexity.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#start" class="button button-primary">Launch demo</a>
+            <a
+              href="https://github.com/fatings/hello-world"
+              target="_blank"
+              rel="noreferrer"
+              class="button button-secondary"
+            >
+              View repo
+            </a>
+          </div>
+
+          <div class="hero-note">
+            <span class="status-dot"></span>
+            <span id="rotating-text">Fast to deploy</span>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="window">
+            <div class="window-top">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <div class="code-block">
+              <p><span class="code-muted">$</span> git clone hello-world</p>
+              <p><span class="code-muted">$</span> open index.html</p>
+              <p><span class="code-accent">Hello, World!</span></p>
+            </div>
+          </div>
+
+          <div class="mini-stats">
+            <div class="stat-card">
+              <strong>0</strong>
+              <span>Build steps</span>
+            </div>
+            <div class="stat-card">
+              <strong>3</strong>
+              <span>Files only</span>
+            </div>
+            <div class="stat-card">
+              <strong>100%</strong>
+              <span>Static</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Why this version</p>
+          <h2>Clean, responsive and ready to publish</h2>
+          <p>
+            Designed to work directly from the repository with no extra setup.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Minimal</h3>
+            <p>
+              Pure HTML, CSS and JavaScript. Easy to edit and easy to maintain.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Responsive</h3>
+            <p>
+              Looks good on desktop and mobile without adding dependencies.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Deployable</h3>
+            <p>
+              Works well with GitHub Pages or any basic static hosting.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="start" class="section section-cta">
+      <div class="container">
+        <div class="cta-card">
+          <p class="eyebrow">Get started</p>
+          <h2>Your repo is ready for a first impression.</h2>
+          <p>
+            Replace the current files, commit, push, and publish.
+          </p>
+
+          <a
+            href="https://github.com/fatings/hello-world"
+            target="_blank"
+            rel="noreferrer"
+            class="button button-primary"
+          >
+            Open repository
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> hello-world</p>
+      <p>Built for fast static hosting.</p>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
