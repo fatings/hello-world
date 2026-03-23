@@ -2,10 +2,10 @@ const rotatingText = document.getElementById("rotating-text");
 const yearElement = document.getElementById("year");
 
 const messages = [
-  "Fast to deploy",
-  "Easy to edit",
-  "Ready for GitHub Pages",
-  "Pure HTML, CSS and JS"
+  "Projetos estaticos",
+  "Apps prontas a abrir",
+  "Portfolio com demos",
+  "HTML, CSS e JS"
 ];
 
 let currentIndex = 0;
