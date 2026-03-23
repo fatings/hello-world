@@ -333,6 +333,36 @@ h1 {
   margin-bottom: 0;
 }
 
+.feature-card-game {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.game-tag {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(101, 228, 198, 0.12);
+  border: 1px solid rgba(101, 228, 198, 0.22);
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.text-link {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.text-link:hover {
+  color: var(--accent);
+}
+
 .section-cta {
   padding-top: 20px;
   padding-bottom: 72px;
