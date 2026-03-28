@@ -10,9 +10,11 @@ Portefolio de projetos web estaticos feito com HTML, CSS e JavaScript.
 |-- README.md
 |-- script.js
 |-- styles.css
-`-- games/
-    |-- pipe_puzzle.html
-    `-- sudoku.html
+|-- games/
+|   |-- pipe_puzzle.html
+|   `-- sudoku.html
+`-- pages/
+    `-- photography.html
 ```
 
 ## Projetos
@@ -21,7 +23,7 @@ Portefolio de projetos web estaticos feito com HTML, CSS e JavaScript.
 
 Pagina principal do repositorio. Funciona como portefolio de projetos e apresenta:
 
-- uma introducao ao repositiorio
+- uma introducao ao repositorio
 - uma grelha com uma caixa por projeto
 - links diretos para os HTML das apps disponiveis
 
@@ -44,6 +46,15 @@ Jogo de Sudoku standalone com interface propria.
 - dicas
 - reinicio e resolucao do puzzle
 
+### pages/photography.html
+
+Portefolio fotografico pessoal (Fatings Photo).
+
+- banner com slider automatico de fotografias em destaque
+- grelha de portefolio com validacao individual via oEmbed do Flickr
+- ligacoes aos perfis publicos: Flickr, Instagram e 500px
+- design escuro responsivo
+
 ## Ficheiros principais
 
 - `index.html` - pagina principal do portefolio
@@ -51,6 +62,7 @@ Jogo de Sudoku standalone com interface propria.
 - `script.js` - comportamento simples da homepage, incluindo texto rotativo e ano no rodape
 - `games/pipe_puzzle.html` - jogo Pipe Puzzle
 - `games/sudoku.html` - jogo Sudoku
+- `pages/photography.html` - portefolio fotografico com oEmbed do Flickr
 
 ## Como abrir
 
