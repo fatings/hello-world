@@ -1,8 +1,0 @@
-Hello, World!
-
-This is a placeholder file.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-[Replace this content with your actual text.]
